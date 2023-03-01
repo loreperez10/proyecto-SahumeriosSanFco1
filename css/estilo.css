@@ -13,6 +13,9 @@ html {
 /* BODY */
 body {
     background-color: rgba(215, 197, 216, 0.445);
+    position: relative;
+    padding-bottom: 6em;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -103,8 +106,6 @@ header nav a:hover {
         text-align: center;
     }
 
-
-
 }
 
 .caja-informacion {
@@ -134,16 +135,13 @@ header nav a:hover {
 
 .caja a {
     text-decoration: underline;
+    font-size: 1.3rem;
+    margin-left: -8rem;
 }
 
 .caja h2 {
     font-size: 1.7rem;
     padding-top: 1.4rem;
-}
-
-.caja a {
-    font-size: 1.3rem;
-    margin-left: -8rem;
 }
 
 .caja:hover {
@@ -170,7 +168,7 @@ header nav a:hover {
     transition: ease 1s;
 }
 
-.carrusel-ajustes img {
+/* .carrusel-ajustes img {
     border-radius: 2rem;
 }
 
@@ -178,30 +176,23 @@ header nav a:hover {
     margin-left: 5rem;
     margin-right: 5rem;
 
-}
+} */
+
 
 .lista-destacadoDelMes img {
     width: 20rem;
     margin-top: 3rem;
-    margin-left: 60%;
-    margin-right: 60%;
 }
 
 .imagenes-destacadoDelMes a {
-    text-align: center;
-    display: block;
-    padding: 0.5rem;
     font-size: 1.5rem;
-
+    text-align: center;
 }
 
-.imagenes-destacadoDelMes {
+.lista-destacadoDelMes {  
     display: flex;
+    align-items: center;
     justify-content: space-around;
-}
-
-.lista-destacadoDelMes {
-    padding: 2rem;
 }
 
 main {
@@ -296,20 +287,186 @@ a {
 }
 
 /* MAIN CONTACTO */
-.contacto h2 {
-    text-align: left;
-    margin-bottom: 4rem;
-
+.sectionContacto{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
-.contacto {
-    border: solid black 2.5px;
-    border-radius: 1.5rem;
-    margin-left: 50rem;
-    padding: 2rem;
-    padding-left: 7rem;
-    margin-bottom: 10rem;
-    margin-right: 50rem;
+.contactoForm{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    background: rgba(219, 107, 219, 0.377) ;
+    box-shadow: 1px 9px 20px -5px rgba(0,0,0,0.59);
+    border-radius: 30px;
+}
+
+.contactoForm .form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+
+ .form form{
+    width: 100%;
+}
+
+.form .texto h2{
+    color: rgb(158, 11, 158);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.form .texto p{
+    color: rgb(97, 72, 97);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+ .form .inputBox {
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
+}
+
+.form .inputBox label{
+    color: rgb(123, 35, 158);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.form .inputBox [type="text"],
+.form .inputBox [type="email"],
+.form .inputBox textarea{
+
+    border: none;
+    background: rgba(238, 235, 238, 0.349);
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(27, 23, 23);
+    resize: none;
+}
+
+ .form .inputBox [type="text"]:focus,
+.form .inputBox [type="email"]:focus,
+ .form .inputBox textarea:focus {
+outline: 2px solid rgba(153, 101, 153, 0.377);
+}
+
+form input[type="submit"]{
+    background: rgb(109, 57, 122);
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+   margin-top: 1.5rem;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 9px 20px -5px rgba(0,0,0,0.59);
+    transition: 0.3s;
+}
+
+
+ .form .inputBox [type="submit"]:hover{
+background: rgb(149, 57, 172);
+}
+
+.contactoForm .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgBox{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 2rem;
+}
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textBox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.infoContacto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.infoContacto ion-icon {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    color:black;
+}
+.infoContacto p{
+    color: black;
+    font-size: 1.4rem;
+}
+.redessociales-contacto a{
+    padding: 20px;
+    font-size: 3rem;
+    color: black;
+    transition: 0.3s;
+}
+
+.redessociales-contacto a:hover{
+    color: rgb(69, 44, 80);
+}
+
+@media only screen and (max-width: 1500px) {
+    section .contactoForm {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
+@media only screen and (max-width: 874px){
+.contactoForm .info{
+    height: 300px;
+    padding: 20px;
+}
+.contactoForm .info .imgBox{
+    display: none;
+}
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .contactoForm .form{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .contactoForm .info{
+        margin-bottom: 30px;
+    }
 }
 
 /* MAIN PREGUNTAS */
@@ -349,6 +506,11 @@ a {
 
 footer {
     background-color: rgba(170, 76, 170, 0.384);
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
 
 

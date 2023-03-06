@@ -21,10 +21,10 @@ body {
 /* HEADER */
 .logo {
     width: 230px;
-   margin-top: 10px;
+    margin-top: 10px;
 }
 
-.logoContacto{
+.logoContacto {
     width: 230px;
     margin-top: -5px;
 }
@@ -41,20 +41,21 @@ header li {
 }
 
 header {
-    background-color: rgba(170, 76, 170, 0.384);
+    background: rgba(170, 76, 170, 0.384);
     width: 100%;
     height: 12rem;
 }
 
 .botonHamburguesa {
     background-color: rgb(212, 189, 212);
+
 }
 
-/* @media screen and (max-width:993px) {  
-    header .logo{
-       margin-top: -5px;
+@media screen and (max-width:993px) {
+    header .logo {
+        margin-top: -5px;
     }
-} */
+}
 
 
 .ajustes-buscadorEncabezado {
@@ -77,7 +78,6 @@ header {
 }
 
 .navegacion-principal {
-
     line-height: 8rem;
 }
 
@@ -101,23 +101,6 @@ header nav a:hover {
 }
 
 /* MAIN INDEX */
-
-@media (max-width: 655px) {
-    .caja-informacion {
-        flex-direction: column;
-        height: 6rem;
-        width: 25rem;
-        margin-top: 2rem;
-        ;
-    }
-
-    .caja {
-        margin-left: 0.1rem;
-        display: inline-block;
-        text-align: center;
-    }
-
-}
 
 .caja-informacion {
     border: 0.5px solid rgba(138, 138, 138, 0.37);
@@ -160,6 +143,49 @@ header nav a:hover {
     border-radius: 1rem;
 }
 
+@media screen and (max-width:993px) {
+    .caja-informacion {
+        width: 60rem;
+        height: 6rem;
+    }
+
+    .caja {
+        width: 48rem;
+        height: 5rem;
+    }
+
+    .caja a {
+        display: none;
+    }
+
+    .caja h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .caja-informacion {
+        width: 40rem;
+        height: 4rem;
+    }
+
+    .caja {
+        width: 25rem;
+        height: 3rem;
+    }
+
+    .caja a {
+        display: none;
+    }
+
+    .caja h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+}
+
 .botonWhatsApp {
     position: fixed;
     z-index: 999;
@@ -179,11 +205,11 @@ header nav a:hover {
     transition: ease 1s;
 }
 
-/* .carrusel-ajustes img {
+.carrusel-ajustes img {
     border-radius: 2rem;
 }
 
-.carrusel-ajustes {
+/* .carrusel-ajustes {
     margin-left: 5rem;
     margin-right: 5rem;
 
@@ -524,6 +550,7 @@ form input[type="submit"] {
 
 .ajustes-preguntas {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 

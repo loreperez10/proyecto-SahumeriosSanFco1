@@ -22,6 +22,7 @@ body {
 .logo {
     width: 230px;
     margin-top: 10px;
+    margin-right: 2rem;
 }
 
 .logoContacto {
@@ -43,12 +44,16 @@ header li {
 header {
     background: rgba(170, 76, 170, 0.384);
     width: 100%;
-    height: 12rem;
 }
 
 .botonHamburguesa {
     background-color: rgb(212, 189, 212);
 
+}
+
+.ajustes-buscadorEncabezado {
+    width: 15rem;
+    height: 2.3rem;
 }
 
 @media screen and (max-width:993px) {
@@ -61,6 +66,7 @@ header {
 .ajustes-buscadorEncabezado {
     height: 3.2rem;
     width: 20rem;
+    margin-left: 2rem;
     margin-right: 6rem;
 }
 
@@ -78,13 +84,12 @@ header {
 }
 
 .navegacion-principal {
-    line-height: 8rem;
+    line-height: 9rem;
 }
 
 .navegacion-principal a {
     display: inline-block;
     color: black;
-    padding: 0.8rem;
     line-height: normal;
     font-size: 1.5rem;
     -webkit-transition: all 500ms ease;
@@ -110,6 +115,7 @@ header nav a:hover {
     height: 8.9rem;
     display: flex;
     margin-top: 6rem;
+    margin-bottom: 6rem;
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
@@ -144,6 +150,11 @@ header nav a:hover {
 }
 
 @media screen and (max-width:993px) {
+
+    .destacadodelmes {
+        font-size: 3rem;
+    }
+
     .caja-informacion {
         width: 60rem;
         height: 6rem;
@@ -164,6 +175,10 @@ header nav a:hover {
 }
 
 @media screen and (max-width:767px) {
+    .destacadodelmes {
+        font-size: 2.5rem;
+    }
+
     .caja-informacion {
         width: 40rem;
         height: 4rem;
@@ -183,6 +198,34 @@ header nav a:hover {
         font-size: 1.2rem;
     }
 
+}
+
+@media screen and (max-width:430px) {
+    .destacadodelmes {
+        font-size: 2rem;
+    }
+
+    .caja-informacion {
+        width: 25rem;
+        height: 25rem;
+        flex-direction: column;
+    }
+
+    .caja {
+
+        justify-content: center;
+        width: 20rem;
+        height: 10rem;
+    }
+
+    .caja a {
+        display: none;
+    }
+
+    .caja h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
 
 }
 
@@ -323,6 +366,7 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 
 /* MAIN CONTACTO */
@@ -508,7 +552,7 @@ form input[type="submit"] {
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 350) {
 
     .contactoForm .form {
         margin-left: 10px;

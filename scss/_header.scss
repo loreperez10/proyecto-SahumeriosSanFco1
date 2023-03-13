@@ -1,0 +1,64 @@
+header {
+	li {
+		display: inline;
+	}
+
+	background: rgba(170, 76, 170, 0.384);
+	width: 100%;
+
+	nav {
+		a {
+			&:hover {
+				background: rgba(216, 199, 216, 0.849);
+				border-radius: 2rem;
+			}
+		}
+	}
+}
+
+.logo {
+	width: 230px;
+	margin-top: 10px;
+	margin-right: 2rem;
+}
+
+.logoContacto {
+	width: 230px;
+	margin-top: -5px;
+}
+
+.botonHamburguesa {
+	background-color: $background-color_2;
+}
+
+.ajustes-buscadorEncabezado {
+	height: 3.2rem;
+	width: 20rem;
+	margin-right: 9rem;
+
+	input {
+		border-radius: 1.3rem;
+		font-size: 1.3rem;
+	}
+}
+
+.centrar {
+	width: 100%;
+}
+
+.navegacion-principal {
+	line-height: 9rem;
+
+	a {
+		display: inline-block;
+		color: $color_1;
+		line-height: normal;
+		font-size: 1.5rem;
+		-webkit-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		transition: all 500ms ease;
+		margin-top: 3rem;
+		margin-left: 6rem;
+		align-content: center;
+	}
+}

@@ -1,0 +1,172 @@
+@media screen and (max-width:993px) {
+	header {
+		.logo {
+			margin-top: -5px;
+		}
+	}
+	.destacadodelmes {
+		font-size: 3rem;
+	}
+	.caja-informacion {
+		width: 60rem;
+		height: 6rem;
+	}
+	.caja {
+		width: 48rem;
+		height: 5rem;
+		a {
+			display: none;
+		}
+		h2 {
+			font-size: 1.6rem;
+			margin-top: 0;
+		}
+	}
+	.iconocaja {
+		ion-icon {
+			display: none;
+		}
+	}
+}
+@media screen and (max-width:1228px) {
+	.navegacion-principal {
+		a {
+			margin-left: 4rem;
+		}
+	}
+	.ajustes-buscadorEncabezado {
+		height: 3.2rem;
+		width: 15rem;
+		margin-right: 1rem;
+	}
+}
+@media screen and (max-width:767px) {
+	.destacadodelmes {
+		font-size: 2.5rem;
+	}
+	.caja-informacion {
+		width: 40rem;
+		height: 4.5rem;
+	}
+	.caja {
+		width: 25rem;
+		height: 3rem;
+		a {
+			display: none;
+		}
+		h2 {
+			text-align: center;
+			font-size: 1.2rem;
+		}
+	}
+}
+@media screen and (max-width:430px) {
+	.destacadodelmes {
+		font-size: 2.5rem;
+	}
+	.caja-informacion {
+		width: 20rem;
+		height: 18rem;
+		flex-direction: column;
+	}
+	.caja {
+		justify-content: center;
+		width: 19.5rem;
+		height: 18rem;
+		border-bottom: 0.1rem solid rgba(128, 128, 128, 0.349);
+		border-radius: 0;
+		a {
+			display: none;
+		}
+		h2 {
+			text-align: center;
+			font-size: 1.2rem;
+		}
+	}
+}
+@media only screen and (max-width: 1500px) {
+	section {
+		.contactoForm {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	.contactoForm {
+		.info {
+			height: 300px;
+			padding: 10px;
+			.imgBox {
+				display: none;
+			}
+		}
+	}
+	.sectionContacto {
+		margin-bottom: 20rem;
+	}
+	.imagenBuda {
+		img {
+			height: 20.2rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 15rem;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.imagenBuda {
+		img {
+			height: 17.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 13rem;
+		}
+	}
+}
+@media only screen and (max-width: 421px) {
+	main {
+		padding-left: 0;
+	}
+	.form {
+		.inputBox {
+			[type="text"] {
+				width: 25rem;
+			}
+			[type="email"] {
+				width: 25rem;
+			}
+			textarea {
+				width: 25rem;
+			}
+		}
+	}
+	.contactoForm {
+		padding-left: 1rem;
+		.form {
+			margin-left: 10px;
+			width: 100%;
+		}
+		.info {
+			margin-bottom: 30px;
+		}
+	}
+}
+@media screen and (min-width:350px) and (max-width: 499px) {
+	.imagenBuda {
+		img {
+			height: 10.5rem;
+			margin-left: 0rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 8rem;
+		}
+		display: flex;
+		justify-content: center;
+	}
+}

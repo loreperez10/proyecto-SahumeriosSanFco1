@@ -1,0 +1,34 @@
+.lista-categorias {
+	h2 {
+		margin-bottom: 3rem;
+	}
+}
+.categorias {
+	a {
+		background-color: $background-color_4;
+		border: 1px solid rgb(202, 140, 202);
+		color: $color_1;
+		font-weight: 500;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		width: 25rem;
+		height: 3.5rem;
+		margin-left: 6.5rem;
+		font-size: 2rem;
+		display: block;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+	img {
+		width: 25rem;
+		height: 25rem;
+		margin-left: 6.5rem;
+		margin-top: 1.5rem;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 5rem;
+}

@@ -1,0 +1,94 @@
+.iconocaja {
+	h2 {
+		margin-top: -8rem;
+	}
+	ion-icon {
+		font-size: 4rem;
+		display: flex;
+		align-items: center;
+		padding: 2rem;
+		padding-right: 0rem;
+		padding-left: 2.5rem;
+	}
+}
+.caja-informacion {
+	border: 0.5px solid rgba(138, 138, 138, 0.37);
+	background-color: $background-color_3;
+	border-radius: 9px;
+	width: 96rem;
+	height: 8.9rem;
+	display: flex;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: row;
+}
+.caja {
+	border: 0px solid rgba(146, 146, 146, 0.26);
+	border-radius: 10px;
+	width: 32rem;
+	height: 8rem;
+	margin-top: 0.3rem;
+	margin-left: 0.1rem;
+	text-align: center;
+	cursor: pointer;
+	a {
+		text-decoration: underline;
+		font-size: 1.3rem;
+		margin-left: -8rem;
+	}
+	h2 {
+		font-size: 1.7rem;
+		padding-top: 1.4rem;
+	}
+	&:hover {
+		background: rgba(168, 156, 168, 0.253);
+		border-radius: 1rem;
+	}
+}
+
+.carrusel-ajustes {
+	img {
+		border-radius: 2rem;
+		cursor: pointer;
+	}
+}
+.imagenBuda {
+	img {
+		height: 26.7rem;
+	}
+}
+.lista-destacadoDelMes {
+	img {
+		width: 20rem;
+		margin-top: 3rem;
+		margin-right: 3rem;
+		border-radius: 1rem;
+	}
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 4rem;
+}
+.linkdescatadodelmes {
+	a {
+		display: none;
+	}
+	&:hover {
+		color: $color_2;
+	}
+}
+h1 {
+	padding: 0.9rem;
+	margin-top: 4.3rem;
+	font-family: $font-family_1;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 0.5rem;
+	font-size: 3.8rem;
+}
+a {
+	text-decoration: none;
+}

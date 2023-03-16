@@ -1,3 +1,40 @@
+
+@media only screen and (max-width: 1500px) {
+	section {
+		.contactoForm {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+	}
+}
+
+@media screen and (max-width:1228px) {
+	.navegacion-principal {
+		a {
+			margin-left: 4rem;
+		}
+	}
+	.ajustes-buscadorEncabezado {
+		height: 3.2rem;
+		width: 15rem;
+		margin-right: 1rem;
+	}
+
+	.imagenBuda {
+		img {
+			height: 24rem;
+			margin-left: 0.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 18rem;
+			margin-left: 0.5rem;
+		}
+	}
+
+}
+
+
 @media screen and (max-width:993px) {
 	header {
 		.logo {
@@ -28,21 +65,50 @@
 		}
 	}
 }
-@media screen and (max-width:1228px) {
-	.navegacion-principal {
-		a {
-			margin-left: 4rem;
+
+@media only screen and (max-width: 991px) {
+	.contactoForm {
+		.info {
+			height: 200px;
+			padding-bottom: 5rem;
+			.imgBox {
+				display: none;
+			}
 		}
 	}
-	.ajustes-buscadorEncabezado {
-		height: 3.2rem;
-		width: 15rem;
-		margin-right: 1rem;
+	.sectionContacto {
+		margin-bottom: 20rem;
+	}
+	.imagenBuda {
+		img {
+			height: 20.2rem;
+			margin-left: 0.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 15rem;
+			margin-left: 0.5rem;
+		}
+	}
+
+	.imagenBuda {
+		img {
+			height: 17.3rem;
+			margin-left: 0.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 13rem;
+			margin-left: 0.5rem;
+		}
 	}
 }
-@media screen and (max-width:767px) {
-	.destacadodelmes {
-		font-size: 2.5rem;
+
+@media screen and (max-width: 767px) {
+	.destacadodelmes h1{
+		font-size: 2.6rem;
 	}
 	.caja-informacion {
 		width: 40rem;
@@ -59,7 +125,36 @@
 			font-size: 1.2rem;
 		}
 	}
+
+	.imagenBuda {
+		img {
+			height: 14.7rem;
+			margin-right: 0.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 11rem;
+			margin-right: 0.5rem;
+		}
+	}
 }
+
+@media screen and (max-width:609px) {
+	.imagenBuda {
+		img {
+			height: 12.2rem;
+			margin-right: 0.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 9rem;
+			margin-right: 0.5rem;
+		}
+	}
+}
+
 @media screen and (max-width:430px) {
 	.destacadodelmes {
 		font-size: 2.5rem;
@@ -83,50 +178,10 @@
 			font-size: 1.2rem;
 		}
 	}
+
 }
-@media only screen and (max-width: 1500px) {
-	section {
-		.contactoForm {
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		}
-	}
-}
-@media only screen and (max-width: 991px) {
-	.contactoForm {
-		.info {
-			height: 300px;
-			padding: 10px;
-			.imgBox {
-				display: none;
-			}
-		}
-	}
-	.sectionContacto {
-		margin-bottom: 20rem;
-	}
-	.imagenBuda {
-		img {
-			height: 20.2rem;
-		}
-	}
-	.lista-destacadoDelMes {
-		img {
-			width: 15rem;
-		}
-	}
-}
-@media screen and (max-width: 767px) {
-	.imagenBuda {
-		img {
-			height: 17.5rem;
-		}
-	}
-	.lista-destacadoDelMes {
-		img {
-			width: 13rem;
-		}
-	}
-}
+
+
 @media only screen and (max-width: 421px) {
 	main {
 		padding-left: 0;
@@ -159,14 +214,26 @@
 	.imagenBuda {
 		img {
 			height: 10.5rem;
-			margin-left: 0rem;
+			margin-left: 0.5rem;
 		}
 	}
 	.lista-destacadoDelMes {
 		img {
 			width: 8rem;
+			margin-left: 0.5rem;
 		}
-		display: flex;
-		justify-content: center;
+	}
+
+	.imagenBuda {
+		img {
+			height: 8rem;
+			margin-right: 0.5rem;
+		}
+	}
+	.lista-destacadoDelMes {
+		img {
+			width: 6rem;
+			margin-right: 0.5rem;
+		}
 	}
 }

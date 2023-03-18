@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Marcellus&display=swap");
+.informacionh1 h1 {
+  text-align: left;
+  margin: 2rem;
+  font-size: 3.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -632,11 +638,6 @@ footer {
     margin-left: 3.5rem;
     margin-right: 2rem;
   }
-}
-.informacionh1 h1 {
-  text-align: left;
-  margin: 2rem;
-  font-size: 3.2rem;
 }
 
 /*# sourceMappingURL=estilo.css.map */

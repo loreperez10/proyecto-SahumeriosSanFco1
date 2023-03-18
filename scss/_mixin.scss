@@ -1,9 +1,9 @@
-@mixin tamañoletrah2 {
+@mixin tamañoletrah1 {
     text-align: left;
     margin: 2rem;
     font-size: 3.2rem;
 }
 
-.informacionh2 h2{
-    @include tamañoletrah2;
+.informacionh1 h1{
+    @include tamañoletrah1;
 }
